@@ -35,8 +35,7 @@ Because the LWC references the Custom Type, and the Custom Type references the L
 
 **Step 1: Deploy LWC (Generic)**
 Open `orderStatusRenderer.js-meta.xml` and **comment out** the `<targetConfigs>` section.
-```xml
-```
+
 *Deploy the LWC folder to the Org.*
 
 **Step 2: Deploy Lightning Types**
