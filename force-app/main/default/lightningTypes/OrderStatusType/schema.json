@@ -1,0 +1,5 @@
+{
+    "title": "Order Status Type",
+    "description": "Custom type for displaying order status details",
+    "lightning:type": "@apexClassType/c__OrderStatusOutput"
+}  

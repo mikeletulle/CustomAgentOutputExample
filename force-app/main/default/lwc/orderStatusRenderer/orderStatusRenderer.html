@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Order Summary" icon-name="standard:orders">
+        <div class="slds-p-around_medium">
+            <p><strong>Order #:</strong> {value.orderNumber}</p>
+            <p><strong>Status:</strong> 
+                <lightning-badge label={value.status} class="slds-m-left_small"></lightning-badge>
+            </p>
+            <p><strong>Total:</strong> 
+                <lightning-formatted-number value={value.totalAmount} format-style="currency" currency-code="USD"></lightning-formatted-number>
+            </p>
+            <template if:true={isShipped}>
+                <div class="slds-box slds-theme_success slds-m-top_small">
+                    Your order arrives by {value.estimatedDelivery}!
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
